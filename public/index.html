@@ -2,6 +2,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <script>
+  const USERNAME = "taro";
+  const PASSWORD = "1234";
+
+  const inputUser = prompt("tilinotomo");
+  const inputPass = prompt("tilisama");
+
+  if (inputUser !== USERNAME || inputPass !== PASSWORD) {
+    alert("認証失敗。ページを閉じます。");
+    window.location.href = "about:blank";
+  }
+</script>
+
   <meta charset="UTF-8">
   <title>YouTube Viewer</title>
   <link rel="stylesheet" href="style.css">
